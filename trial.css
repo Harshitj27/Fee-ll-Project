@@ -154,7 +154,7 @@ footer {
 }
 
 .footer ul li a:hover {
-    color: #f4a261;
+    color: orangered;
 }
 
 .icons {
@@ -170,7 +170,7 @@ footer {
 }
 
 .icons a:hover {
-    color: #f4a261;
+    color: orangered;
 }
 
 .footer p {
