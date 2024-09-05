@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explorica - Discover Hidden Gems</title>
-    <link rel="stylesheet" href="about.css">
+    <title>Explorica</title>
+    <link rel="stylesheet" href="suggest.css">
 </head>
 
 <body>
@@ -27,23 +27,39 @@
             </div>
         </nav>
     </header>
-
-    <section class="hero-section">
-        <img src="https://3.imimg.com/data3/EF/FQ/MY-3370654/tea-gardens-of-darjeeling-the-hidden-paradise.jpg" alt="">
-        <div class="hero-text">
-            <h2>Discover the Hidden Gems of India</h2>
+    <div class="background">
+        <div class="booking-form">
+            <h2>Suggest Us</h2>
+            <form>
+                
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+               
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject"  required>
+               
+                    <label for="message">Message:</label>
+                    <textarea id="message"  rows="4" required></textarea>
+                
+                    <label for="type">Share:</label>
+                    <select id="type">
+                        <option value="location">Location</option>
+                        <option value="food">Food Place</option>
+                    </select>
+                
+                    <label for="description">Description:</label>
+                    <textarea id="description" rows="4" placeholder="Provide details here..."></textarea>
+                
+                    <label for="image">Upload an Image:</label>
+                    <input type="file" id="image">
+               
+                <button type="submit">Submit</button>
+            </form>
         </div>
-    </section>
-
-    <section class="about-section">
-        <div class="about-content">
-            <h2>About Explorica</h2>
-            <p>Welcome to Explorica, your gateway to discovering the hidden gems and delicious foods of India's most vibrant cities. Our mission is to showcase the lesser-known spots and unique culinary delights that make each city special.</p>
-            <p>At Explorica, we believe that every city has a story to tell, and we're here to share those stories with you. Whether you're a seasoned traveller or a curious explorer, our platform will guide you through the hidden treasures of 20 remarkable Indian cities.</p>
-            <p>Join us on this journey and uncover the secrets of India, one city at a time.</p>
-        </div>
-    </section>
-     
+    </div>
     <footer>
         <div class="footer">
             <ul class="flinks">
@@ -63,9 +79,8 @@
             <p>&copy; 2024 Explorica. All rights reserved.</p>
         </div>
     </footer>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    </body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
 
 </html>
