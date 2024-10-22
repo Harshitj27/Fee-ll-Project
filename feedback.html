@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorica Feedback Form</title>
+  <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">Explorica</a>
+      </div>
+      <ul class="links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="cities.html">Cities</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+      <div class="search">
+        <input type="text" placeholder="Search...">
+        <button class="searchicon"><i class="fa fa-search"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="feedback-form">
+    <h2>Explorica Feedback</h2>
+    <p>Please share your experience with us!</p>
+
+    <form id="feedbackForm" onsubmit="return validateForm()">
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      <small id="nameError"></small>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <small id="emailError"></small>
+
+      <label for="city">City Visited:</label>
+      <select id="city" name="city">
+        <option value="">Select a City</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+        <option value="Alleppey">Alleppey</option>
+        <option value="Amritsar">Amritsar</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Coorg">Coorg</option>
+        <option value="Darjeeling">Darjeeling</option> <!-- Corrected spelling -->
+        <option value="Delhi">Delhi</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Jaipur">Jaipur</option>
+        <option value="Leh">Leh</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Mysore">Mysore</option>
+        <option value="Nainital">Nainital</option>
+        <option value="Pondicherry">Pondicherry</option>
+        <option value="Rameswaram">Rameswaram</option>
+        <option value="Shillong">Shillong</option>
+        <option value="Srinagar">Srinagar</option>
+        <option value="Udaipur">Udaipur</option>
+        <option value="Ujjain">Ujjain</option>
+        <option value="Varanasi">Varanasi</option>
+      </select>
+      <small id="cityError"></small>
+
+      <label for="rating">Rate Your Experience:</label>
+      <div class="star-rating">
+        <span class="star" onclick="rateExperience(1)">&#9733;</span>
+        <span class="star" onclick="rateExperience(2)">&#9733;</span>
+        <span class="star" onclick="rateExperience(3)">&#9733;</span>
+        <span class="star" onclick="rateExperience(4)">&#9733;</span>
+        <span class="star" onclick="rateExperience(5)">&#9733;</span>
+      </div>
+      <input type="hidden" id="rating" name="rating" value="0">
+      <small id="ratingError"></small>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" placeholder="Share your feedback"></textarea>
+      <small id="commentsError"></small>
+
+      <button type="submit">Submit Feedback</button>
+
+      <p id="successMessage" style="display: none;">Thank you for your feedback!</p>
+    </form>
+  </div>
+
+  <script src="feedback.js"></script>
+
+  <footer>
+    <div class="footer">
+      <ul class="flinks">
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="suggest.html">Suggest Us </a></li>
+      </ul>
+      <div class="icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p>&copy; 2024 Explorica. All rights reserved.</p>
+    </div>
+  </footer>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+</html>
