@@ -261,3 +261,22 @@ footer {
         font-size: 1rem;
     }
 }
+
+
+
+.weather-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.weather-container h2 {
+    margin-bottom: 10px;
+}
+
+.weather-container p {
+    font-size: 1.2em;
+}
