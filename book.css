@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 header {
     background-color: #000;
     padding: 1rem 2rem;
@@ -60,64 +61,52 @@ header {
 .search-btn i {
     font-size: 1rem;
 }
-
-
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+body,html{
+    height: 100%;
     margin: 0;
-    padding: 0;
-    background: url('https://media.istockphoto.com/id/1067678216/photo/snow-mountain-view-of-leh-ladakh-district-norther-part-of-india.jpg?s=2048x2048&w=is&k=20&c=riDK5V-7W5-3k5ebcf6tlLSih8Qqir9vwcYPz_8qXz4=') no-repeat center center fixed;
+    font-family: 'poppins',sans-serif;
+}
+.background{
+    background-image: url('https://images.unsplash.com/photo-1498429089284-41f8cf3ffd39?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
-.container {
-    max-width: 700px;
-    margin: 20px auto;
+.booking-form{
+    background-color: rgba(255,255,255,0.7);
     padding: 20px;
-    background: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 80%;
+    margin: 0 auto;
 }
-h1 {
+.booking-form h2{
     text-align: center;
-    color: #333;
-    margin-bottom: 20px;
 }
-.formopt {
-    margin-bottom: 15px;
+.booking-form form{
+    display: flex;
+    flex-direction: column;
 }
-.formopt label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
-}
-.formopt input,
-.formopt select,
-.formopt textarea {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #f4a261; 
+.booking-form input{
+    padding: 8px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box;
 }
-
-.btn {
-    padding: 10px 20px;
-    background-color: orangered; 
-    color: #fff;
+.booking-form button{
+    margin-top:10px;
+    padding: 10px;
+    background-color:orangered;
+    color: white;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
-    text-align: center;
-    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
 }
-.btn:hover {
-    background-color: black; 
-    color: orangered;
-    transform: translateY(-2px);
+.booking-form button:hover{
+    background-color: #f4a261;
 }
 
 footer {
