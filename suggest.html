@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explorica</title>
     <link rel="stylesheet" href="suggest.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
     <header>
         <nav class="navbar">
@@ -20,7 +19,6 @@
                 <li><a href="cities.html">Cities</a></li>
                 <li><a href="activities.html">Activities</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
             </ul>
             <div class="search">
                 <input type="text" placeholder="Search...">
@@ -31,32 +29,31 @@
     <div class="background">
         <div class="booking-form">
             <h2>Suggest Us</h2>
-            <form>
-                
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" required>
-                
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required>
-               
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject"  required>
-               
-                    <label for="message">Message:</label>
-                    <textarea id="message"  rows="4" required></textarea>
-                
-                    <label for="type">Share:</label>
-                    <select id="type">
-                        <option value="location">Location</option>
-                        <option value="food">Food Place</option>
-                    </select>
-                
-                    <label for="description">Description:</label>
-                    <textarea id="description" rows="4" placeholder="Provide details here..."></textarea>
-                
-                    <label for="image">Upload an Image:</label>
-                    <input type="file" id="image">
-               
+            <form id="suggestForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject">
+
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" ></textarea>
+
+                <label for="type">Share:</label>
+                <select id="type">
+                    <option value="location">Location</option>
+                    <option value="food">Food Place</option>
+                </select>
+
+                <label for="description">Description:</label>
+                <textarea id="description" rows="4" placeholder="Provide details here..."></textarea>
+
+                <label for="image">Upload an Image:</label>
+                <input type="file" id="image">
+
                 <button type="submit">Submit</button>
             </form>
         </div>
@@ -81,7 +78,6 @@
         </div>
     </footer>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="suggestform.js"></script>
 </body>
-
 </html>
